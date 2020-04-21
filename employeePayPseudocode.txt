@@ -1,0 +1,72 @@
+1.	start			
+2.				
+3.	initialize employe's id number			
+4.	initialize employe's normal pay rate			
+5.	initialize number of normal hours worked			
+6.	initialize number of over time hours worked			
+7.	initialize total hours worked  hours worked			
+8.	initialize employe's overtime pay rate			
+9.	initialize total weekly pay			
+10.	initialize normal weekly pay			
+11.	initialize overtime weekly pay			
+12.				
+13.	//INPUT PART			
+14.	prompt user to enter employee id number			
+15.				
+16.	DOWHILE until valid hours worked & pay rate is entered			
+17.				
+18.		prompt user to enter pay rate		
+19.			IF [hourly rate is less than $ 10.10]	
+20.				print pay rate shall not be less than $10.00 
+21.			ELSE IF [hourly rate is greater than $25.00]	
+22.				print pay rate can not be greater than $25.00
+23.			ELSE 	
+24.				assign control false
+25.			END IF	
+26.	EndDO			
+27.				
+28.	DOWHILE1			
+29.		DOWHILE2		
+30.			prompt user to enter normal hours worked	
+31.			IF [normal hours worked is less than zero]	
+32.				print working hours can not be negative number
+33.			ELSE IF [total working hours is greater than sixty]	
+34.				print working hours can not be greater than sixty
+35.			ELSE	
+36.				assign control false
+37.			END IF	
+38.				
+39.				
+40.		EndDO2		
+51.				
+52.		DOWHILE3		
+53.			prompt user to enter over time hours worked	
+54.			IF [overtime hours worked is less than zero]	
+55.				print overtime hours can not be negative number
+56.			ELSE	
+57.				assign control false
+58.			END IF	
+59.		EndDO3		
+60.				
+61.		calculate total hours worked which is the sum of normal hours worked and overtime hours worked		
+62.		IF [total hours worked is greater than sixty]		
+63.			print total hours out of range	
+64.			assign control to be true	
+65.				
+66.	EndDO1			
+67.				
+68.	//PROCESS			
+69.	compute employee's weekly pay			
+80.	calculate normal hours worked weekly pay = number of normal hours worked * pay rate			
+71.	calculate overtime pay rate = pay rate * 1.5			
+72.	calculate overtime hours worked weekly pay = number of overtime hours worked * overtime pay rate 			
+73.	employee's weekly pay is equal to the sum of normal hours worked weekly pay and overtime hours worked weekly pay			
+74.				
+75.	//OUTPUT			
+76.				
+77.	print employee's id			
+78.	print normal hours worked weekly pay amount in a row with number of hours and pay rate			
+79.	print overtime hours worked weekly pay amount in a raw with number over overtime hours and overtime payrate			
+80.	print total hours worked weekly pay amount			
+81.				
+82.	end			
